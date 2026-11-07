@@ -13,5 +13,27 @@ public class Question3{
     double standardDeviation;
     
     System.out.printIn("Enter the score: ");
+    int score = input.nextInt();
+    int count = 0;
+    min += score;
+    max += score;
+    
+    while (score >= 0){
+      System.out.printIn("Score: " + score);
+      count++;
+
+      System.out.printIn("Enter the score: ");
+      int score = input.nextInt();
+      sum += score;
+      if (score < min){
+        min == score;
+      }
+      else{
+        max == score
+          }
+    }
+    
+    double average = sum / count;
+    System.out.printIn("Average= " + average);
     
     
